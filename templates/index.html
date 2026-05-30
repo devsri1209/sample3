@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Rabin Karp Pattern Searching</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Rabin-Karp Pattern Searching</h1>
+
+    <div class="box">
+
+        <h3>Input Text</h3>
+        <p>{{ text }}</p>
+
+    </div>
+
+    <div class="box">
+
+        <h3>Pattern</h3>
+        <p>{{ pattern }}</p>
+
+    </div>
+
+    <form method="POST">
+
+        <button type="submit">
+            Run Algorithm
+        </button>
+
+    </form>
+
+    <div class="result">
+
+        <h2>Output</h2>
+
+        <p><b>Pattern Found At :</b> {{ result }}</p>
+
+        <p><b>Text Length :</b> {{ txt_len }}</p>
+
+        <p><b>Pattern Length :</b> {{ pat_len }}</p>
+
+        <p><b>Execution Time :</b> {{ exetime }} seconds</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
